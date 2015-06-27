@@ -38,10 +38,6 @@ gulp.task('build', function () {
     If you have absolute image paths in your stylesheet, the path specified
     in this option will be used as the base directory (relative to gulpfile).
 
-  - `deleteAfterEncoding`  (Boolean)  
-    Set this to true to delete images after they've been encoded. 
-    You'll want to do this in a staging area, and not in your source directories. Be careful.
-
   - `extensions`  (Array of `String` or `RegExp`s)  
     Proccess only specified extensions.  
     Strings are matched against file-extension only, while RegExps are tested against the raw URL value.
@@ -52,6 +48,10 @@ gulp.task('build', function () {
 
   - `maxImageSize` (Number)  
     Maximum filesize in bytes for changing image to base64.
+    
+  - `deleteAfterEncoding`  (Boolean)  
+    Set this to true to delete images after they've been encoded. 
+    You'll want to do this in a staging area, and not in your source directories. Be careful.
 
   - `debug` (Boolean)  
     Enable log to console.
